@@ -1,18 +1,38 @@
 {
-  "users": [
+  "suallar": [
     {
-      "ad": "asdasdas",
-      "status": "asdasd",
-      "tesvir": "asdasda",
-      "sekil": "",
-      "id": 15
+      "bolme": "asdasdasd",
+      "status": "asdasdasdas",
+      "sual": "dasdasdasdasdas",
+      "sualcavabi": "dasdasdasd",
+      "id": 1
     },
     {
-      "ad": "asdasdasfsafa",
-      "status": "asfasfasfsdfasdf",
-      "tesvir": "xczvzxcvzxcvsdv",
-      "sekil": "",
-      "id": 16
+      "bolme": "asdasdasdasd",
+      "status": "asdasdasd",
+      "sual": "asdasdas",
+      "sualcavabi": "asdasd",
+      "id": 2
+    },
+    {
+      "bolme": "asdasd",
+      "status": "asdasdasd",
+      "sual": "asdasdas",
+      "sualcavabi": "aaaaa",
+      "yanlisvariant1": "bbbbb",
+      "yanlisvariant2": "cccccc",
+      "yanlisvariant3": "dddddd",
+      "id": 3
+    },
+    {
+      "bolme": "a",
+      "status": "aa",
+      "sual": "aaa",
+      "sualcavabi": "dddd",
+      "yanlisvariant1": "yyyyy",
+      "yanlisvariant2": "yyyyyy",
+      "yanlisvariant3": "yyyyyyy",
+      "id": 4
     }
   ]
 }

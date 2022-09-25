@@ -6,8 +6,9 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import { TextField } from '@mui/material';
 
+
 export default function FormDialog({open, handleClose, data, onChange, handleFormSubmit}) {
-    const {id,status,ad,tesvir,sekil}=data
+    const {id,status,bolme,sual,dogruvariant,yanlisvariant1,yanlisvariant2,yanlisvariant3}=data
 
   return (
     <div>
@@ -19,15 +20,20 @@ export default function FormDialog({open, handleClose, data, onChange, handleFor
         aria-describedby="alert-dialog-description"
       >
         <DialogTitle id="alert-dialog-title">
-            {id?"Bölməni yenilə":"Yeni bölmə əlavə et"}        
+            {id?"Sualı yenilə":"Yeni sual əlavə et"}        
         </DialogTitle>
         <DialogContent>
           <form>
             <br />
-            <TextField value={ad} onChange={e=>onChange(e)} id="ad" placeholder="Adı daxil edin" label="Ad" fullWidth style={{marginBottom: "10px", color: "red"}}/>
-            <TextField value={status} onChange={e=>onChange(e)} id="status" placeholder="Status daxil edin" label="Status" fullWidth style={{marginBottom: "10px"}}/>
-            <TextField value={tesvir} onChange={e=>onChange(e)} id="tesvir" placeholder="Təsvir daxil edin" label="Təsvir" fullWidth style={{marginBottom: "10px"}}/>
-            <input type="file" value={sekil} onChange={e=>onChange(e)} style={{ border: "1px solid gray",opacity:"0.7",width: "550px",lineHeight: "50px",borderRadius: "4px"}}/>
+            <TextField value={bolme} onChange={e=>onChange(e)} id="bolme" placeholder="Bolmeyi daxil edin" label="Bolme" fullWidth size="small" style={{marginBottom: "10px"}}/>
+            <TextField value={status} onChange={e=>onChange(e)} id="status" placeholder="Status daxil edin" label="Status" fullWidth size="small" style={{marginBottom: "10px"}}/>
+            <TextField value={sual} onChange={e=>onChange(e)} id="sual" placeholder="Sual daxil edin" label="Sual" fullWidth size="small" style={{marginBottom: "10px"}}/>
+            <div style={{textAlign: "center", color: "green", marginBottom:"10px"}}>Dogru Cavab:</div>
+            <TextField value={dogruvariant} onChange={e=>onChange(e)} id="sualcavabi" placeholder="Duz cavabi daxil edin" label="Doğru Cavab" fullWidth size="small" style={{marginBottom: "10px"}}/>
+            <div style={{textAlign: "center", color: "red", marginBottom:"10px"}}>Yanlış Cavablar:</div>
+            <TextField value={yanlisvariant1} onChange={e=>onChange(e)} id="yanlisvariant1" placeholder="Yanlış cavabi daxil edin" label="Yanlış Cavab 1" fullWidth size="small" style={{marginBottom: "10px"}}/>
+            <TextField value={yanlisvariant2} onChange={e=>onChange(e)} id="yanlisvariant2" placeholder="Yanlış cavabi daxil edin" label="Yanlış Cavab 2" fullWidth size="small" style={{marginBottom: "10px"}}/>
+            <TextField value={yanlisvariant3} onChange={e=>onChange(e)} id="yanlisvariant3" placeholder="Yanlış cavabi daxil edin" label="Yanlış Cavab 3" fullWidth size="small" style={{marginBottom: "10px"}}/>
           </form>
         </DialogContent>
         <DialogActions>
